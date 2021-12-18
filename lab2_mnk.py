@@ -146,3 +146,5 @@ app.add_routes(
     [web.get("/", handle), web.get("/mnk", wmnk),
      web.post("/mnk", wmnk1),
      web.get("/{name}", handle)])
+
+web.run_app(app)
